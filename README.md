@@ -11,7 +11,7 @@ The purpose of this project is to demonstrate the ability to collect, work with,
 ## Repository Inclusions
 This repository contains the following files:
 1. `tidydata.txt` contains the final tidy data set.
-2. `run_analysis.R` contains the script for processing the file.
+2. `run_analysis.R` contains the script for processing the raw data to the tidy data set. 
 3. `README.md` 
 4. `Codebook.md` contains discussion on the data and variables used.
 

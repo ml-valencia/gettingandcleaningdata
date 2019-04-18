@@ -51,14 +51,13 @@ names(meanstd)<-newnames
 
 #Renaming data: assigning activity labels on the data
 tidy1<-merge(meanstd,activitylabels,by.x="code",by.y="code",all=TRUE)
-tidy2<-tidy1[c(2,82,3:80)]
+tidy2<-tidy1[c(2,82,3:81)]
 
 #Melt and Cast Operation 
 library(reshape2)
 
 #Melting the data frame
 tidy3<-melt(tidy2,id=c("SubjectID","Activity"))
-View(tidy3)
 
 #Casting the data frame: mean of each variable for each activity and each subject
 TidyData<-dcast(tidy3,SubjectID + Activity ~ variable,mean,value='value')
